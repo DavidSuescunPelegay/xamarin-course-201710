@@ -2,7 +2,7 @@
 
 # Curso Xamarin
 
-En este curso vamos a realizar un recorrido por las diferentes tecnologías y plataformas móviles y la solución que Microsoft nos propone para desarrollar aplicaciones móviles, con ejemplos reales veremos en que casos interesa realizar aplicaciones en Xamarin y su funcionamiento.
+En este curso vamos a realizar un recorrido por las diferentes tecnologías y plataformas móviles y la solución que Microsoft nos propone para desarrollar aplicaciones móviles, con ejemplos reales veremos en qué casos interesa realizar aplicaciones en Xamarin y su funcionamiento.
 
 Después de esta breve introducción comenzaremos la programación de la aplicación móvil con Xamarin, comentando los aspectos que se van introduciendo, siguiendo una arquitectura limpia, utilizando patrones de desarrollo.
 
@@ -61,15 +61,15 @@ Las herramientas necesarias que tenemos que tener instaladas son:
 
 - [*ReSharper*](https://www.jetbrains.com/resharper/)                                                                                                                                                      <img alt="ReSharper Logo" align="right" src="https://resources.jetbrains.com/storage/ui/favicons/apple-touch-icon-60x60.png">
 
-  > **Opcional:** Facilita bastante la programación, ya que si has utilizado algún programa de la **Plataforma IntelliJ** (Android Studio, PhpStorm, WebStorm...), podrás utilizar las combinaciones de tecla y agrega funciones extra a Visual Studio.
+  > **Opcional:** Facilita bastante la programación, ya que si has utilizado algún programa de la **Plataforma IntelliJ** (Android Studio, PhpStorm, WebStorm...), podrás utilizar las combinaciones de teclas de JetBrains y agregar funciones extra a Visual Studio.
   >
   > Ofrece una versión de prueba de 30 días, suficiente para hacer el curso.
 
 - [*Postman*](https://www.getpostman.com/)    
 
-  <img alt="ReSharper Logo" align="right" src="https://media-exp2.licdn.com/mpr/mpr/shrinknp_100_100/AAEAAQAAAAAAAAxDAAAAJDQ1NTI0MDI1LTQwZWYtNGQ1Yy1iOWQzLTRkM2RmYzU3ZTg4Yw.png">  
+  <img alt="ReSharper Logo" align="right" src="https://lh3.googleusercontent.com/8T1sK3krF94U1CQhVHMHUwtdRrrJtawv00SHulg0CAqYVKshjpchTfPpTuct745aysJbS94V=w50-h50-e365">  
 
-  > **Opcional:** Nos permite hacer peticiones HTTP de una manera sencilla.
+  > **Opcional:** Nos permite hacer peticiones HTTP de una manera sencilla, también tiene [extensión para Chrome](https://chrome.google.com/webstore/detail/postman/fhbjgbiflinjbdggehcddcbncdddomop?hl=en).
 
 
 ## Contenidos
