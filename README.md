@@ -84,7 +84,7 @@ Las herramientas necesarias que tenemos que tener instaladas son:
 6. *Rápida Introducción a conceptos de Android.* Layouts
 7. Presentación del Entorno de Trabajo
 
-### Práctica: <u>Gestor de Clientes</u>: Aplicación móvil que consume datos de una API
+### Práctica: Gestor de Clientes: Aplicación móvil que consume datos de una API
 
 El objetivo es desarrollar una aplicación móvil utilizando los patrones de diseño más utilizados para generar un CRUD (Create, Read, Update, Delete) con datos recibidos de una Web API en formato JSON.
 
