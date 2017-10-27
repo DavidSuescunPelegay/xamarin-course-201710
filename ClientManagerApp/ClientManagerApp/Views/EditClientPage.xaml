@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             Title="Editar Cliente"
+             x:Class="ClientManagerApp.Views.EditClientPage">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Guardar" Clicked="Save_Clicked" />
+    </ContentPage.ToolbarItems>
+    <ContentPage.Content>
+        <StackLayout Spacing="20" Padding="15">
+            <Label Text="{Binding ClientId}" x:Name="editClientId" IsVisible="False"></Label>
+            <Label Text="Name" FontSize="Medium" />
+            <Entry Text="{Binding Name}" x:Name="editName" FontSize="Small" />
+            <Label Text="Email" FontSize="Medium" />
+            <Editor Text="{Binding Email}" x:Name="editEmail" FontSize="Small" Margin="0" />
+            <Label Text="City" FontSize="Medium" />
+            <Editor Text="{Binding City}" x:Name="editCity" FontSize="Small" Margin="0" />
+            <Label Text="Country" FontSize="Medium" />
+            <Editor Text="{Binding Country}" x:Name="editCountry" FontSize="Small" Margin="0" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
+    
+    
+    
+    
+    

@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ClientManagerApp.InformationPage"
+             xmlns:vm="clr-namespace:ClientManagerApp;"
+             Title="{Binding Title}">
+    <ContentPage.BindingContext>
+        <vm:InformationViewModel />
+    </ContentPage.BindingContext>
+    <Grid VerticalOptions="FillAndExpand">
+        <StackLayout Orientation="Vertical" Padding="16,40,16,40" Spacing="10">
+            <Label FontSize="22">
+                <Label.FormattedText>
+                    <FormattedString>
+                        <FormattedString.Spans>
+                            <Span Text="ClientManagerApp" FontAttributes="Bold" FontSize="22" />
+                            <Span Text=" " />
+                            <Span Text="1.0" ForegroundColor="{StaticResource LightTextColor}" />
+                        </FormattedString.Spans>
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+            <Label>
+                <Label.FormattedText>
+                    <FormattedString>
+                        <FormattedString.Spans>
+                            <Span Text="Aplicacion para probar Xamarin" />
+                        </FormattedString.Spans>
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+            <Label>
+                <Label.FormattedText>
+                    <FormattedString>
+                        <FormattedString.Spans>
+                            <Span Text="Aqui se puede poner lo que querais" FontAttributes="Bold" />
+                        </FormattedString.Spans>
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+            <Button Margin="0,10,0,0" Text="Ir a Github" Command="{Binding OpenWebCommand}" BackgroundColor="{StaticResource Primary}" TextColor="White" VerticalOptions="End" />
+        </StackLayout>
+    </Grid>
+</ContentPage>

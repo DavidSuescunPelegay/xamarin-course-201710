@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ClientManagerApp.ClientsPage"
+              Title="{Binding Title}"
+             x:Name="BrowseItemsPage">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Añadir" Clicked="AddClient_Clicked" />
+    </ContentPage.ToolbarItems>
+
+    <ContentPage.Content>
+        <StackLayout>
+            <ListView x:Name="ItemsListView" 
+                ItemsSource="{Binding Items}"
+                VerticalOptions="FillAndExpand"
+                 HasUnevenRows="true"
+                 RefreshCommand="{Binding LoadItemsCommand}"
+                 IsPullToRefreshEnabled="true"
+                 IsRefreshing="{Binding IsBusy, Mode=OneWay}"
+                 CachingStrategy="RecycleElement"
+                 ItemSelected="OnItemSelected">
+
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <Grid Padding="10">
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="Auto" />
+                                    <RowDefinition Height="*" />
+                                </Grid.RowDefinitions>
+
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="Auto" />
+                                    <ColumnDefinition Width="*" />
+                                </Grid.ColumnDefinitions>
+
+                                <Label Text="{Binding Name}" 
+                                       Grid.Row="0" Grid.Column="0"
+                                       LineBreakMode="NoWrap" 
+                                       Style="{DynamicResource ListItemTextStyle}" 
+                                       FontSize="16" />
+                                <Label Text="{Binding City}" 
+                                       Grid.Row="1" Grid.Column="0"
+                                       LineBreakMode="NoWrap"
+                                       Style="{DynamicResource ListItemDetailTextStyle}"
+                                       FontSize="13" />
+
+                                <StackLayout Grid.RowSpan="2"
+                                             Grid.Column="1"
+                                             Orientation="Horizontal"
+                                             HorizontalOptions="End">
+                                    <Button Text="Editar"
+                                            CommandParameter="{Binding ClientId}"
+                                            BackgroundColor="{DynamicResource PrimaryDark}"
+                                            TextColor="White"
+                                            Clicked="EditButton_OnClicked"
+                                    ></Button>
+                                    <Button Text="Eliminar"
+                                            CommandParameter="{Binding ClientId}"
+                                            Clicked="DeleteButton_OnClicked"
+                                            BackgroundColor="{DynamicResource PrimaryDark}"
+                                            TextColor="White"
+                                    ></Button>
+                                </StackLayout>
+                            </Grid>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
