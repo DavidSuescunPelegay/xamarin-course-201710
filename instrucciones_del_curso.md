@@ -1197,3 +1197,23 @@ public partial class App : Application
         }
     }
 ```
+Y ya estaría, simplemente debemos subir la API a un servidor .NET [AppHarbor](https://appharbor.com/), [Azure](https://azure.microsoft.com/en-us/)..., sobre todo tiene que ser un servidor HTTPS porque si no Xamarin no puede realizar peticiones si no es un servidor seguro, después debemos hacer lo siguiente:
+
+1. Cambiar la URL de la Base de datos en el archivo `web.config` de la API por el que nos ha dado el servidor:
+
+   ```xml
+   <connectionStrings>
+       <add name="DefaultConnection" connectionString="Data Source=(LocalDb)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\aspnet-WebApplication1-20171028073239.mdf;Initial Catalog=aspnet-WebApplication1-20171028073239;Integrated Security=True"
+         providerName="System.Data.SqlClient" />
+     </connectionStrings>
+   ```
+
+2. Cambiar la URL de la API en el proyecto móvil, carpeta `Data`, archivo `Constants.cs`:
+
+   ```c#
+   public static class Constants
+       {
+           // URL of REST service
+           public static string RestUrl = "http://localhost:64247";
+       }
+   ```
