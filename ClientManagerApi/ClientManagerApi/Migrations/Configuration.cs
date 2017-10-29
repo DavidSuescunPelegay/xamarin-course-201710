@@ -34,84 +34,48 @@ namespace ClientManagerApi.Migrations
             context.Clients.AddOrUpdate(
                 new Client
                 {
-                    City = "Alicante",
-                    Name = "Kasper Brown",
-                    Country = "Spain",
+                    City = "Zaragoza",
+                    Name = "Pepe Perez",
+                    Country = "España",
                     Image = "http://person.eu/00general/img/coordinator_and_members/Sharon-Smit.png",
                     ClientId = 1,
-                    Email = "curabitur.massa @ut.ca"
+                    Email = "pepe.perez@gmail.com"
                 },
                 new Client
                 {
-                    City = "Eastonberg",
-                    Name = "Elise Steuber V",
-                    Country = "Saint Barthélemy",
+                    City = "Huesca",
+                    Name = "Maria Luisa Fernandez",
+                    Country = "España",
                     Image = "http://person.eu/00general/img/coordinator_and_members/Sharon-Smit.png",
                     ClientId = 2,
-                    Email = "Conrad.Dickinson@wiley.biz"
+                    Email = "m.luisa.fernandez@hotmail.com"
                 },
                 new Client
                 {
-                    City = "Pansyview",
-                    Name = "Kaley Kris",
-                    Country = "Sweden",
+                    City = "Teruel",
+                    Name = "Antonio Sanchez",
+                    Country = "España",
                     Image = "http://person.eu/00general/img/coordinator_and_members/Sharon-Smit.png",
                     ClientId = 3,
-                    Email = "Andrew@daron.me"
+                    Email = "sanchez.antonio@yahoo.es"
                 },
                 new Client
                 {
-                    City = "Runteland",
-                    Name = "Tressa Gerhold",
-                    Country = "Brazil",
+                    City = "Alcañiz",
+                    Name = "Pedro Ruiz",
+                    Country = "España",
                     Image = "http://person.eu/00general/img/coordinator_and_members/Sharon-Smit.png",
                     ClientId = 4,
-                    Email = "Billie@lew.io"
+                    Email = "pedroruiz@gmail.com"
                 },
                 new Client
                 {
-                    City = "Ebonystad",
-                    Name = "Kyler Marks Jr.",
-                    Country = "Trinidad and Tobago",
+                    City = "Barbastro",
+                    Name = "Lucia Perez",
+                    Country = "España",
                     Image = "http://person.eu/00general/img/coordinator_and_members/Sharon-Smit.png",
                     ClientId = 5,
-                    Email = "Easton_Farrell@magdalen.us"
-                },
-                new Client
-                {
-                    City = "Konopelskiland",
-                    Name = "Mr. Jamey Williamson",
-                    Country = "Guinea-Bissau",
-                    Image = "http://person.eu/00general/img/coordinator_and_members/Sharon-Smit.png",
-                    ClientId = 6,
-                    Email = "Marquis@hailey.tv"
-                },
-                new Client
-                {
-                    City = "Mayratown",
-                    Name = "Brianne Borer",
-                    Country = "San Marino",
-                    Image = "http://person.eu/00general/img/coordinator_and_members/Sharon-Smit.png",
-                    ClientId = 7,
-                    Email = "Abbigail.Howe@troy.net"
-                },
-                new Client
-                {
-                    City = "North Maxieburgh",
-                    Name = "Brennon Reilly",
-                    Country = "Brunei",
-                    Image = "http://person.eu/00general/img/coordinator_and_members/Sharon-Smit.png",
-                    ClientId = 8,
-                    Email = "Amelia@arnaldo.biz"
-                },
-                new Client
-                {
-                    City = "South Wyman",
-                    Name = "Dr. Ashley Gleichner",
-                    Country = "Pacific Islands Trust Territory",
-                    Image = "http://person.eu/00general/img/coordinator_and_members/Sharon-Smit.png",
-                    ClientId = 9,
-                    Email = "Jaylon@kristoffer.tv"
+                    Email = "lucia_perez@gmail.com"
                 }
             );
 
