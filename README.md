@@ -106,7 +106,3 @@ Durante esta práctica, se expondrán los siguientes conceptos y procesos del de
 ## Contacto
 
 Para cualquier consulta, no dudes en contactar conmigo en este email: <dsuescun96@gmail.com>
-
-```
-
-```
